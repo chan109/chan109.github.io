@@ -1,0 +1,352 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./node_modules/fullpage.js/dist/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+        <script src="./node_modules/fullpage.js/vendors/jquery.easings.min.js"></script>
+
+
+        <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+        <script type="text/javascript" src="./node_modules/fullpage.js/vendors/scrolloverflow.min.js"></script>
+
+        <script type="text/javascript" src="./node_modules/fullpage.js/dist/jquery.fullPage.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+                    scrollOverflow: true,
+                    slidesNavigation: true,
+                    fadingEffect: true,
+                    fadingEffectKey: 'YWx2YXJvdHJpZ28uY29tXzAzN1ptRmthVzVuUldabVpXTjBiNXo='
+                });
+
+            });
+
+        </script>
+
+        <style type="text/css">
+
+            body{
+                margin:0;
+                font-family: 'Tangerine', serif;
+                font-size: 25px;
+            }
+
+            nav{
+                position: absolute;
+                top:0;
+                width: 100%;
+                height: 10vh;
+                background-color: rgba(0,0,0,0.8);
+                text-align: center;
+                z-index: 10;
+            }
+
+            nav .my-icon{
+                border-radius: 50%;
+                height:10vh;
+                width:10%;
+                vertical-align: middle;
+            }
+
+            nav ul, nav ul li{
+                display: inline-block;
+                text-decoration: none;
+                vertical-align: middle;
+                font-size:1em;
+            }
+
+            nav ul{
+                width:61%;
+                text-align: right;
+            }
+
+            nav ul li{
+                margin-left: 6%;
+            }
+
+            nav a{
+                text-decoration: none;
+                color: white;
+            }
+
+            .inactive{
+                color: currentColor;
+                cursor: not-allowed;
+                opacity: 0.5;
+                text-decoration: none;
+            }
+            
+            .section {
+                text-align: center;
+            }
+
+            .section img{
+                width:100%;
+                height:100%;
+            }
+
+            .home-filter{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255,0,0,0.5);
+                position: absolute;
+                top: 0;
+                color: white;
+            }
+
+            .home-filter h1{
+                margin-top: 35vh;
+            }
+
+            .home-filter h3{
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .home-filter p{
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: serif;
+                margin-top: 30px;
+                line-height: 38px;
+            }
+
+            .project-container{
+                position: absolute;
+                top:0;
+                width:100%;
+                height:100%;
+            }
+
+            .project-container .project-description, .project-container .project-icons{
+                top: 10%;
+                width: 50%;
+                height: 61.5%;
+                position:absolute;
+            }
+
+            .project-container .project-description{
+                background: none;
+            }
+
+            .project-container .project-description p{
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 1em;
+                font-family: serif;
+            }
+
+            .project-description span{
+                display: flex;
+                justify-content: space-around;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: cursive;
+            }
+
+            .project-description span .button{
+                width: 45%;
+                background-color: white;
+                text-decoration: none;
+                color: black;
+                border-radius: 5px;
+                border: 1px black solid;
+
+            }
+
+            .project-description span .active:hover{
+                background-color: rgb(204,67,77);
+                color: white;
+                transition: background-color 1.5s linear, color 0.5s ease;
+
+            }
+
+            .project-container .project-icons{
+                left: 50%;
+                background: none;
+
+
+            }
+
+            .technology-used{
+                position: absolute;
+                height: 23%;
+                width: 100%;
+                bottom: 5%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .slide-button-left, .slide-button-right{
+                z-index: 1;
+                position: absolute;
+
+                background-color: black;
+                color: white;
+                padding: 12px;
+                font-size: 0.6em;
+                border: none;
+            }
+
+            .slide-button-left:hover, .slide-button-right:hover{
+                color: black;
+                background-color: darkgrey;
+                transition: color 0.2s linear, background-color 0.2s linear;
+            }
+
+            .slide-button-left{
+                top: 50%;
+                left: 0;
+            }
+
+
+            .slide-button-right{
+                top: 50%;
+                right: 0;
+            }
+
+            .section .icon{
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                margin: 35px;
+            }
+
+            
+
+        </style>
+    </head>
+    <body>
+    <nav>
+        <img src="./img/myICon.png" alt="" class="my-icon"/>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div id="fullpage" >
+        <div class="section home" data-anchor="home">
+            <img src="./img/DSC_0553.png" alt="">
+            <div class="home-filter home-content">
+                <div class="fadein-helper">
+                    <h1>Michael Chen</h1>
+                    <h3 class="text">Full Stack Developer</h3>
+                    <p>
+                        I am someone who is consistently growing; taking time to continue learning new technologies even though they are not a direct requirement of the job.
+                        I find that many times it's a combination of what you study both directly and indirectly related to work.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <!--<div class="slide">-->
+                <!--<img src="img/white-background-3.jpg" alt="">-->
+                <!--<div class="project-container">-->
+                    <!--<div class="project-description">-->
+                        <!--<h1>Project1: TO-DO-List</h1>-->
+                        <!--<p>-->
+                            <!--This project has improved the use of a normal to-do-list by using the dragable functionality from jquery,-->
+                            <!--so that user can have a better interaction between the tasks-list and the Calender.-->
+                            <!--That brings up the goal of this project which enables users to drag the list-items directly into the Calender.-->
+                        <!--</p>-->
+
+                        <!--<span>-->
+                            <!--<a href="www.google.com" class="button active">Source Code</a>-->
+                            <!--<a href="#" class="button inactive">Demo</a>-->
+                        <!--</span>-->
+                    <!--</div>-->
+                    <!--<div class="project-icons">-->
+                        <!--<img src="img/to_do_list_Screenshot_3.png" class="p-slide" alt="">-->
+                        <!--<img src="img/to_do_list_Screenshot_2.png" class="p-slide" alt="">-->
+                        <!--<button class="slide-button-left" onclick="plusDivs(-1)">&#10094;</button>-->
+                        <!--<button class="slide-button-right" onclick="plusDivs(1)">&#10095;</button>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="technology-used"></div>-->
+
+            <!--</div>-->
+            <!--<div class="slide"> Slide 2 </div>-->
+            <!--<div class="slide"> Slide 3 </div>-->
+            <!--<div class="slide"></div>-->
+            <img src="img/white-background-3.jpg" alt="">
+            <div class="project-container">
+                <div class="project-description">
+                    <h1>Project1: TO-DO-List</h1>
+                    <p>
+                        This project has improved the use of a normal to-do-list by using the dragable functionality from jquery,
+                        so that user can have a better interaction between the tasks-list and the Calender.
+                        That brings up the goal of this project which enables users to drag the list-items directly into the Calender.
+                    </p>
+
+                    <span>
+                            <a href="https://github.com/chan109/To-Do-List" class="button active">Source Code</a>
+                            <a href="To-Do-List/To%20Do%20List/index.html" class="button active">Demo</a>
+                        </span>
+                </div>
+                <div class="project-icons">
+                    <img src="img/to_do_list_Screenshot_3.png" class="p-slide" alt="">
+                    <img src="img/to_do_list_Screenshot_2.png" class="p-slide" alt="">
+                    <button class="slide-button-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="slide-button-right" onclick="plusDivs(1)">&#10095;</button>
+
+                </div>
+            </div>
+            <div class="technology-used">
+                <img class="icon" src="logos/jquery_logo.jpg" alt="">
+                <img class="icon" src="logos/moment_logo.jpg" alt="">
+                <img class="icon" src="logos/bootstrap_logo.jpg" alt="">
+                <img class="icon" src="logos/JsRender_logo.png" alt="">
+            </div>
+        </div>
+        <div class="section">sec</div>
+        <div class="section">section4</div>
+    </div>
+
+    <script>
+        var projectSlideIndex = 1;
+        showDivs(projectSlideIndex);
+
+        function plusDivs(n) {
+            showDivs(projectSlideIndex += n);
+        }
+
+//        function showDivs(n) {
+//            var i;
+//            var x = document.getElementsByClassName("p-slide");
+//            if (n > x.length) {projectSlideIndex = 1}
+//            if (n < 1) {projectSlideIndex = x.length}
+//            for (i = 0; i < x.length; i++) {
+//                x[i].style.display = "none";
+//            }
+//            x[projectSlideIndex-1].style.display = "block";
+//        }
+        function showDivs(n) {
+            var i;
+            var x = $(".p-slide")
+            if (n > x.length) {projectSlideIndex = 1}
+            if (n < 1) {projectSlideIndex = x.length}
+            for (i = 0; i< x.length; i++){
+                $(x[i]).css("display", "none")
+            }
+
+            $(x[projectSlideIndex-1]).fadeIn()
+        }
+
+    </script>
+    </body>
+    </html>
+</DOCTYPE>

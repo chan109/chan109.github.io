@@ -1,0 +1,30 @@
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.ProfileBackgroundImage{
+    background-image: url(img/DSC_0553.png);
+    /*background-color: yellow;*/
+    background-size: cover;
+    width:100%;
+    height:100vh;
+    z-index: -1;
+    position: relative;
+}
+
+.ProfileBackgroundImageHelper{
+    background-color: red;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ProfileBackgroundImage h1{
+    position: inherit;
+    text-align: center;
+
+}
