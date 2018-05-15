@@ -219,6 +219,10 @@
                 margin: 35px;
             }
 
+            .contact-container{
+                font-family: serif;
+            }
+
             
 
         </style>
@@ -342,7 +346,14 @@
                 <img class="icon" src="logos/bootstrap_logo.jpg" alt="">
             </div>
         </div>
-        <div class="section">section4</div>
+        <div class="section contact-container">
+            <h1>Contact Me</h1>
+            <h3>Email: <a href="chenmkan777@gmail.com">chenmkan777@gmail.com</a></h3>
+            <h3>LinkIn: <a href="www.linkedin.com/in/michael-chen-124810145">www.linkedin.com/in/michael-chen-124810145</a></h3>
+            <h3>GitHub: <a href="https://github.com/chan109">https://github.com/chan109</a></h3>
+            <h3>Phone#: 250-300-5861</h3>
+            <a href="https://docs.google.com/document/d/1Qnp4ouv3yBVH1eH8vckoL_ix9yfRV2-3hCtvkoo5Li4/edit?usp=sharing">Resume</a>
+        </div>
     </div>
     <script>
 
@@ -375,7 +386,6 @@
             }
 
             function showDivs(n, type) {
-                debugger
                 var i;
                 var x = $(".p-slide" + type)
                 if (n > x.length) {projectSlideIndex = 1}
