@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="To-Do-List/tdl/bootstrap-year-calendar.min.css" />
+    <link rel="stylesheet" href="To-Do-List/tdl/style.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="To-Do-List/tdl/bootstrap-year-calendar.min.js"></script>
+	<script src="To-Do-List/tdl/jsrender.min.js"></script>
+	<script src="To-Do-List/tdl/moment.min.js"></script>
+    <script src="To-Do-List/tdl/scripts.js"></script>
+</head>
+<body>
+
+    <div class="col-sm-4 col-md-3 col-xl-2">
+
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="New task" id="itemToAdd">
+			</div>
+
+			<div class="form-group">
+				<label for="duration">Duration:</label>
+				<label for="duration" class="radio-inline">
+					<input type="radio" value="1" id="oneDay" name="radiosName" checked="true">1
+				</label>
+				<label for="duration" class="radio-inline">
+					<input type="radio" value="2" id="twoDay" name="radiosName">2
+				</label>
+				<label for="duration" class="radio-inline">
+					<input type="radio" value="3" id="threeDay" name="radiosName">3
+				</label>
+				<label for="duration" class="radio-inline">
+					<input type="radio" value="4" id="fourDay" name="radiosName">4
+				</label>
+				<label for="duration" class="radio-inline">
+					other&nbsp<input type="text" id="otherDay" size="4">
+				</label>
+
+				<button class="btn btn-primary pull-right" type="button" onclick="addItem()">Add</button>
+			</div>
+
+		<div id="tasks-container" class="panel panel-default">
+	        <div class="panel-heading" data-toggle="collapse" data-parent="#tasks-container" href="#new-tasks-container">
+				<span class="glyphicon glyphicon-asterisk"></span>
+				New tasks (<span class="task-number">0</span>)
+			</div>
+	        <div id="new-tasks-container" class="panel-collapse collapse in">
+				<div id="new-tasks-list" class="panel-body task-list"></div>
+			</div>
+
+	        <div class="panel-heading" data-toggle="collapse" data-parent="#tasks-container" href="#planned-tasks-container">
+				<span class="glyphicon glyphicon-calendar"></span>
+				Planned tasks (<span class="task-number">0</span>)
+			</div>
+	        <div id="planned-tasks-container" class="panel-collapse collapse in">
+				<div id="planned-tasks-list" class="panel-body task-list"></div>
+			</div>
+			
+			<div class="panel-heading" data-toggle="collapse" data-parent="#tasks-container" href="#treated-tasks-container">
+				<span class="glyphicon glyphicon-ok"></span>
+				Treated tasks (<span class="task-number">0</span>)
+			</div>
+	        <div id="treated-tasks-container" class="panel-collapse collapse">
+				<div id="treated-tasks-list" class="panel-body task-list"></div>
+			</div>
+		</div>
+    </div>
+    <div class="col-sm-8 col-md-9 col-xl-10">
+        <div id="calendar"></div>
+    </div>
+	<script type="text/x-jsrender" id="task-template">
+		<div class="task {{if treated}}disabled{{/if}}" {{if !treated}} draggable="true" {{/if}} data-id="{{:id}}" {{if color}} style="background-color: {{:color}}" {{/if}}>
+			<div class="duration">{{:duration}} <span class="glyphicon glyphicon-time"></span></div>
+			<div>
+				{{:name}}
+				{{if date}} ({{:~getDate(date)}}) {{/if}}
+			</div>
+			
+			<div class="buttons-container">
+				{{if !treated}}
+					<button class="btn btn-success treat-button"><span class="glyphicon glyphicon-ok"></span></button>
+				{{/if}}
+				<button class="btn btn-danger remove-button"><span class="glyphicon glyphicon-remove"></span></button>
+			</div>
+		</div>
+	</script>
+</body>
+</html>
