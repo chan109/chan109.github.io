@@ -21,19 +21,10 @@
         <!--<script type="text/javascript" src="./node_modules/fullpage.js/dist/jquery.fullPage.js"></script>-->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#fullpage').fullpage({
-                    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
-                    scrollOverflow: true,
-                    slidesNavigation: true,
-                    fadingEffect: true,
-                    fadingEffectKey: 'YWx2YXJvdHJpZ28uY29tXzAzN1ptRmthVzVuUldabVpXTjBiNXo='
-                });
+        <!--<script type="text/javascript">-->
 
-            });
 
-        </script>
+        <!--</script>-->
 
         <style type="text/css">
 
@@ -258,37 +249,40 @@
                 </div>
             </div>
         </div>
+
+        <!--<div class="slide">-->
+        <!--<img src="img/white-background-3.jpg" alt="">-->
+        <!--<div class="project-container">-->
+        <!--<div class="project-description">-->
+        <!--<h1>Project1: TO-DO-List</h1>-->
+        <!--<p>-->
+        <!--This project has improved the use of a normal to-do-list by using the dragable functionality from jquery,-->
+        <!--so that user can have a better interaction between the tasks-list and the Calender.-->
+        <!--That brings up the goal of this project which enables users to drag the list-items directly into the Calender.-->
+        <!--</p>-->
+
+        <!--<span>-->
+        <!--<a href="www.google.com" class="button active">Source Code</a>-->
+        <!--<a href="#" class="button inactive">Demo</a>-->
+        <!--</span>-->
+        <!--</div>-->
+        <!--<div class="project-icons">-->
+        <!--<img src="img/to_do_list_Screenshot_3.png" class="p-slide" alt="">-->
+        <!--<img src="img/to_do_list_Screenshot_2.png" class="p-slide" alt="">-->
+        <!--<button class="slide-button-left" onclick="plusDivs(-1)">&#10094;</button>-->
+        <!--<button class="slide-button-right" onclick="plusDivs(1)">&#10095;</button>-->
+
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="technology-used"></div>-->
+
+        <!--</div>-->
+        <!--<div class="slide"> Slide 2 </div>-->
+        <!--<div class="slide"> Slide 3 </div>-->
+        <!--<div class="slide"></div>-->
+
+        <!--first project-->
         <div class="section">
-            <!--<div class="slide">-->
-                <!--<img src="img/white-background-3.jpg" alt="">-->
-                <!--<div class="project-container">-->
-                    <!--<div class="project-description">-->
-                        <!--<h1>Project1: TO-DO-List</h1>-->
-                        <!--<p>-->
-                            <!--This project has improved the use of a normal to-do-list by using the dragable functionality from jquery,-->
-                            <!--so that user can have a better interaction between the tasks-list and the Calender.-->
-                            <!--That brings up the goal of this project which enables users to drag the list-items directly into the Calender.-->
-                        <!--</p>-->
-
-                        <!--<span>-->
-                            <!--<a href="www.google.com" class="button active">Source Code</a>-->
-                            <!--<a href="#" class="button inactive">Demo</a>-->
-                        <!--</span>-->
-                    <!--</div>-->
-                    <!--<div class="project-icons">-->
-                        <!--<img src="img/to_do_list_Screenshot_3.png" class="p-slide" alt="">-->
-                        <!--<img src="img/to_do_list_Screenshot_2.png" class="p-slide" alt="">-->
-                        <!--<button class="slide-button-left" onclick="plusDivs(-1)">&#10094;</button>-->
-                        <!--<button class="slide-button-right" onclick="plusDivs(1)">&#10095;</button>-->
-
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="technology-used"></div>-->
-
-            <!--</div>-->
-            <!--<div class="slide"> Slide 2 </div>-->
-            <!--<div class="slide"> Slide 3 </div>-->
-            <!--<div class="slide"></div>-->
             <img src="img/white-background-3.jpg" alt="">
             <div class="project-container">
                 <div class="project-description">
@@ -305,10 +299,10 @@
                         </span>
                 </div>
                 <div class="project-icons">
-                    <img src="img/to_do_list_Screenshot_3.png" class="p-slide" alt="">
-                    <img src="img/to_do_list_Screenshot_2.png" class="p-slide" alt="">
-                    <button class="slide-button-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="slide-button-right" onclick="plusDivs(1)">&#10095;</button>
+                    <img src="img/to_do_list_Screenshot_3.png" class="p-slide0" alt="">
+                    <img src="img/to_do_list_Screenshot_2.png" class="p-slide0" alt="">
+                    <button class="slide-button-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                    <button class="slide-button-right" onclick="plusDivs(1, 0)">&#10095;</button>
 
                 </div>
             </div>
@@ -319,41 +313,88 @@
                 <img class="icon" src="logos/JsRender_logo.png" alt="">
             </div>
         </div>
-        <div class="section">sec</div>
+
+        <!--second project-->
+        <div class="section">
+            <img src="img/white-background-3.jpg" alt="">
+            <div class="project-container">
+                <div class="project-description">
+                    <h1>Project1: Class-Attendent-List</h1>
+                    <p>
+                        This is the web version of the class attending list, which record the facts wheather students has participated or absented a particular class or not.
+                        It give a easy way for user to create new classes, add students in it, and change the status, participating or absent.
+                    </p>
+
+                    <span>
+                            <a href="https://github.com/chan109/class_attendent" class="button active">Source Code</a>
+                            <a href="Projects/class_attendent/client/index.html" class="button active">Demo</a>
+                        </span>
+                </div>
+                <div class="project-icons">
+                    <img src="Projects/class_attendent/pic1.png" class="p-slide1" alt="">
+                    <img src="Projects/class_attendent/pic2.png" class="p-slide1" alt="">
+                    <button class="slide-button-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                    <button class="slide-button-right" onclick="plusDivs(1, 1)">&#10095;</button>
+
+                </div>
+            </div>
+            <div class="technology-used">
+                <img class="icon" src="logos/jquery_logo.jpg" alt="">
+                <img class="icon" src="logos/bootstrap_logo.jpg" alt="">
+            </div>
+        </div>
         <div class="section">section4</div>
     </div>
-
     <script>
-        var projectSlideIndex = 1;
-        showDivs(projectSlideIndex);
 
-        function plusDivs(n) {
-            showDivs(projectSlideIndex += n);
-        }
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+                scrollOverflow: true,
+                slidesNavigation: true,
+                fadingEffect: true,
+                fadingEffectKey: 'YWx2YXJvdHJpZ28uY29tXzAzN1ptRmthVzVuUldabVpXTjBiNXo='
+            });
 
-//        function showDivs(n) {
-//            var i;
-//            var x = document.getElementsByClassName("p-slide");
-//            if (n > x.length) {projectSlideIndex = 1}
-//            if (n < 1) {projectSlideIndex = x.length}
-//            for (i = 0; i < x.length; i++) {
-//                x[i].style.display = "none";
-//            }
-//            x[projectSlideIndex-1].style.display = "block";
-//        }
-        function showDivs(n) {
-            var i;
-            var x = $(".p-slide")
-            if (n > x.length) {projectSlideIndex = 1}
-            if (n < 1) {projectSlideIndex = x.length}
-            for (i = 0; i< x.length; i++){
-                $(x[i]).css("display", "none")
+
+            //curenttype = 0 => project1, 1 => project2, and so on
+            var projectSlideIndex = 1;
+            var currentType = 0;
+
+            //add showDivs for each added project
+            showDivs(projectSlideIndex, 0);
+            showDivs(projectSlideIndex, 1);
+
+            function plusDivs(n, type) {
+                if(type != currentType) {
+                    currentType = type;
+                    projectSlideIndex = 1;
+
+                }
+
+                showDivs(projectSlideIndex += n, type);
             }
 
-            $(x[projectSlideIndex-1]).fadeIn()
-        }
+            function showDivs(n, type) {
+                debugger
+                var i;
+                var x = $(".p-slide" + type)
+                if (n > x.length) {projectSlideIndex = 1}
+                if (n < 1) {projectSlideIndex = x.length}
+                for (i = 0; i< x.length; i++){
+                    $(x[i]).css("display", "none")
+                }
+
+                $(x[projectSlideIndex-1]).fadeIn()
+            }
+
+        });
+
 
     </script>
+
+
+
     </body>
     </html>
 </DOCTYPE>

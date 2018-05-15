@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>课表</h1>
+    <input type="text" id="search-box" placeholder="Class To Search">
+    <button id="search-btn">Search</button>
+
+    <div class="classes-container" my-main-directive>
+        <div class="class" ng-repeat="arg in args" my-repeat-directive>
+            <div class="class-content">
+                <p style="margin-top: 10px">Class size: {{ arg.class_size }}</p>
+                <p class="TA"><span>TA:&nbsp</span> <span ng-repeat="ta in arg.ta">{{ ta }}</span></p>
+                <p>Course Length: {{ arg.course_length }}hours</p>
+                <p>Number of student: {{ arg.class_size}}</p>
+                <ul >
+                    <li ng-repeat="item in arg.tag">{{ item }}</li>
+                </ul>
+            </div>
+
+            <div class="shell magictime" data-hover="puffOut" data-return="puffIn">
+                <div class="bg-helper"></div>
+                <img src="../client/img/profile.jpg" alt="" class="class-bg">
+                <h1>{{ arg.name }}</h1>
+                <h2>Instructor: {{ arg.instructor_name }}</h2>
+                <h3 class="start-date">Start date:{{ arg.start_date }}</h3>
+                <h3 class="end-date">End date:{{ arg.end_date }}</h3>
+            </div>
+        </div>
+    </div>
+</div>
+

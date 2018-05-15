@@ -1,0 +1,102 @@
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.person-list{
+    width: 10%;
+}
+
+.title{
+    text-align: center;
+    line-height: 2px;
+}
+
+.person-list ul li{
+    list-style: none;
+    padding: 10px;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+.person-list .add{
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: deepskyblue;
+    border: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.person-list .add:hover{
+    background-color: deepskyblue;
+}
+
+
+.person-list ul li:hover{
+    background-color: darkorange;
+    font-weight: bolder;
+    border-radius: 10px;
+    transition: background-color .5s linear, border-radius .5s linear;
+}
+
+.detail-container {
+    padding: 1.5rem;
+    width: 70%;
+    text-align: center;
+}
+
+.detail-container span{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.detail-container form{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.detail-container input[type=text]{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    height:2rem;
+    border: none;
+    padding:6px;
+}
+
+.detail-container input[type=button]{
+    margin-right: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.detail-container .delete{
+    background-color: red;
+}
+
+.detail-container .edit{
+    background-color: deepskyblue;
+}
+
+
+.detail-container div{
+    margin-bottom: 1rem;
+}
+
+.edit-form{
+    display: none;
+}
+
+.show-form{
+}
+
+.show-form input{
+    background: none;
+}
+

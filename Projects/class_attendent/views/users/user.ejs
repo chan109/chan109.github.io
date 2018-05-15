@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/magic.min.css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<img src="img/bg.jpg" alt="Background Image" class="bg-img">
+<nav>
+    <h1>I LOVING CODING</h1>
+    <ul>
+        <li><a href="students.html">Students</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="/class">Courses</a></li>
+        <li><a href="signUp.html"><button class="sign-up">Sign up</button></a></li>
+        <li><a href="signIn.html"><button class="sign-in">Sign in</button></a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1 id="course-title">前端开发课程99期</h1>
+    <input type="text" id="search-box" placeholder="Student To Search">
+    <button id="search-btn">Search</button>
+    <div id="course-action">
+        <button id="delete-course">Delete</button>
+        <button id="edit-course">Edit</button>
+    </div>
+
+    <div class="paginationForDay">
+        <a href="">Day 1</a>
+        <a href="">Day 2</a>
+        <a href="">Day 3</a>
+        <a href="">Day 4</a>
+    </div>
+
+    <div class="students">
+        <!--<div class="student">-->
+            <!--<div class="student-label">1</div>-->
+            <!--<div class="student-name">Michael Chen</div>-->
+            <!--<div class="student-status">-->
+                <!--<button class="attendenting">Attending</button>-->
+                <!--<button class="delete">Delete</button>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+
+    <div class="pagination"></div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script src="js/sampleData.js"></script>
+<script src="js/users.js"></script>
+
+</body>
+</html>

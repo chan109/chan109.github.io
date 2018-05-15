@@ -1,0 +1,9 @@
+html, body {
+	height: 100%;
+	font-family: "Roboto Condensed", sans-serif; 
+	color: #41464b;
+}
+
+h1 {
+	text-transform: uppercase;
+}
