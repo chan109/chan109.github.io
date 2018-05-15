@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96f13f3d-71c2-4bc5-9fd3-5869029e15f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/.idea/To Do List.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/bootstrap-year-calendar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/bootstrap-year-calendar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/jsrender.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdl/style.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/To-Do-List" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/todolist.html" afterPath="$PROJECT_DIR$/tdl/todolist.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todolist.html" afterPath="$PROJECT_DIR$/todolist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fullpage.js/README.md" afterPath="$PROJECT_DIR$/node_modules/fullpage.js/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="303" column="43" lean-forward="false" selection-start-line="303" selection-start-column="43" selection-end-line="303" selection-end-column="43" />
+              <caret line="303" column="47" lean-forward="false" selection-start-line="303" selection-start-column="47" selection-end-line="303" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#nav#0;n#body#0;n#html#1;n#DOCTYPE#0;n#!!top" expanded="true" />
               </folding>
@@ -40,21 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="todolist.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/todolist.html">
+        <entry file="file://$PROJECT_DIR$/tdl/todolist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,6 +83,7 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/todolist.html" />
+        <option value="$PROJECT_DIR$/tdl/todolist.html" />
       </list>
     </option>
   </component>
@@ -170,6 +153,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tdl" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
@@ -196,12 +180,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524612142987</updated>
-      <workItem from="1524612144293" duration="30126000" />
+      <workItem from="1524612144293" duration="30279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30126000" />
+    <option name="totallyTimeSpent" value="30279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="182" width="1280" height="800" extended-state="0" />
@@ -304,17 +288,17 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="303" column="43" lean-forward="false" selection-start-line="303" selection-start-column="43" selection-end-line="303" selection-end-column="43" />
+          <caret line="303" column="47" lean-forward="false" selection-start-line="303" selection-start-column="47" selection-end-line="303" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#nav#0;n#body#0;n#html#1;n#DOCTYPE#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todolist.html">
+    <entry file="file://$PROJECT_DIR$/tdl/todolist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
