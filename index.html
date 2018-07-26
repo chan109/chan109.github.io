@@ -176,7 +176,7 @@
 
             .technology-used{
                 position: absolute;
-                height: 23%;
+                height: 5%;
                 width: 100%;
                 bottom: 5%;
                 display: flex;
@@ -232,6 +232,11 @@
             .contact-container h1, .contact-container h3, .contact-container a{
                 position: relative;
             }
+
+            .shizaiPicHelper {
+                width: 187.5px !important;
+                height: 406px !important;
+            }
             
 
         </style>
@@ -278,6 +283,8 @@
             //add showDivs for each added project
             showDivs(projectSlideIndex, 0);
             showDivs(projectSlideIndex, 1);
+            showDivs(projectSlideIndex, 2);
+
 
         });
     </script>
@@ -368,7 +375,49 @@
                 <img class="icon" src="logos/bootstrap_logo.jpg" alt="">
             </div>
         </div>
-        <div class="section contact-container" data-anchor="page4">
+
+        <!--third project-->
+        <div class="section" data-anchor="page4">
+            <img src="img/white-background-3.jpg" alt="">
+            <div class="project-container">
+                <div class="project-description">
+                    <h1>Project1: Shizai</h1>
+                    <p>
+                        There are three types of clients being targeted by this application - customer who orders food, rider who delivery meal to customer and admin which mainly work as a meal dispatcher, receiving new orders from customer and assigning orders to rider.
+                        Each role has different accesses and views in the system. The views designed for customer and rider is on mobile phone and for admin is on desktop.
+
+                    </p>
+
+                    <span>
+                            <a class=" inactive button">Source Code</a>
+                            <a href="https://shizai.barcapp.cn/" class="button active">Demo</a>
+                        </span>
+                </div>
+                <div class="project-icons">
+                    <img src="img/shizai_img/pic1.png" class="p-slide2 shizaiPicHelper" alt="">
+                    <img src="img/shizai_img/pic2.png" class="p-slide2 shizaiPicHelper" alt="">
+                    <img src="img/shizai_img/pic3.png" class="p-slide2 shizaiPicHelper" alt="">
+                    <img src="img/shizai_img/pic4.png" class="p-slide2 shizaiPicHelper" alt="">
+                    <img src="img/shizai_img/pic5.png" class="p-slide2 shizaiPicHelper" alt="">
+                    <img src="img/shizai_img/pic6.png" class="p-slide2 shizaiPicHelper" alt="">
+                    <img src="img/shizai_img/pic7.png" class="p-slide2" alt="">
+                    <img src="img/shizai_img/pic8.png" class="p-slide2" alt="">
+                    <img src="img/shizai_img/pic9.png" class="p-slide2" alt="">
+                    <button class="slide-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
+                    <button class="slide-button-right" onclick="plusDivs(1, 2)">&#10095;</button>
+
+                </div>
+            </div>
+            <div class="technology-used">
+                <img class="icon" src="logos/jquery_logo.jpg" alt="">
+                <img class="icon" src="logos/meteor_icon.png" alt="">
+                <img class="icon" src="logos/moment_logo.jpg" alt="">
+                <img class="icon" src="logos/f7_icon.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="section contact-container" data-anchor="page5">
             <img src="img/white-background-3.jpg" alt="">
             <h1>Contact Me</h1>
             <h3>Email: <a href="chenmkan777@gmail.com">chenmkan777@gmail.com</a></h3>
